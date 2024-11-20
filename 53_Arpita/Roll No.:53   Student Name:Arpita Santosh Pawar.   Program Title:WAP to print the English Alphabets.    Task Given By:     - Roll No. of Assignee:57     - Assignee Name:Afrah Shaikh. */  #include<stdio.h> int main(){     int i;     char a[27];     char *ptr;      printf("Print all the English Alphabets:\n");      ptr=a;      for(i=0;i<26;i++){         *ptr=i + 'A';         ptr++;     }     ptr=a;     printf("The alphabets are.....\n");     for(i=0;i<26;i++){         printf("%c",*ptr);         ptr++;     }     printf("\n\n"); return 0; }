@@ -1,0 +1,32 @@
+Roll No.:53
+  Student Name:Arpita Santosh Pawar.
+  Program Title:WAP to print the English Alphabets.
+
+  Task Given By:
+    - Roll No. of Assignee:57
+    - Assignee Name:Afrah Shaikh.
+*/
+
+#include<stdio.h>
+int main(){
+    int i;
+    char a[27];
+    char *ptr;
+
+    printf("Print all the English Alphabets:\n");
+
+    ptr=a;
+
+    for(i=0;i<26;i++){
+        *ptr=i + 'A';
+        ptr++;
+    }
+    ptr=a;
+    printf("The alphabets are.....\n");
+    for(i=0;i<26;i++){
+        printf("%c",*ptr);
+        ptr++;
+    }
+    printf("\n\n");
+return 0;
+}
